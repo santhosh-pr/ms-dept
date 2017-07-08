@@ -1,0 +1,12 @@
+server:
+  port: 8001
+---
+spring:
+ application:
+    name: ms-dept-svc   
+eureka:
+  instance:
+   preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
